@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Apuração DAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Sispayment</h2>
+    
+    <div class="year-selector">
+        <select>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <!-- Outros anos -->
+        </select>
+
+        <select>
+            <option value="2024">Janeiro</option>
+            <option value="2023">Fevereiro</option>
+            <option value="2022">Março</option>
+            <!-- Outros anos -->
+        </select>
+        <button>Ok</button>
+        
+    </div>
+    <div class="model-moto">
+        <label for="payment-date">Pop 110i sfd 
+            3225</label><br></br><br></br>
+    </div>
+
+
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Período de Apuração</th>
+        
+                    <th>Situação</th>
+                    <th>Principal</th>
+                    <th>Multa</th>
+                    <th>Juros</th>
+                    <th>Total</th>
+                    <th>Data de Vencimento</th>
+                    <th>Data de Acolhimento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Janeiro/2024</td>        
+                    <td class="status-liquidado">Liquidado</td>
+                    <td>R$ 76,60</td> <!-- principal-->
+                    <td>R$ 0,00</td> <!-- principal-->
+                    <td>R$0,00</td> <!-- principal-->
+                    <td>R$ 110,00</td> <!-- principal-->
+                    <td>-</td> <!-- principal-->
+                    <td><div class="payment-section buttonc"> <button>Pago</button> </div></td>  <!-- principal-->
+                </tr> 
+                <!-- Replicar linhas para os meses -->
+                <tr>
+                    <td>Novembro/2024</td>
+                    
+                
+                    <td class="status-a-vencer">A Vencer</td>
+                    <td>R$ 76,60</td>
+                    <td>R$ 0,00</td>
+                    <td>R$ 0,00</td>
+                    <td>R$ 80,60</td>
+                    <td>20/12/2024</td>
+                    <td>    <div class="payment-section"> <button>Pagar</button> </div></td>
+                </tr>
+                <!-- Outros meses -->
+            </tbody>
+        </table>
+    </div>
+
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
